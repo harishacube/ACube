@@ -1,0 +1,60 @@
+.footer {
+    position: relative;
+    background-image: url('../../images/world.png');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 55px 10px;
+  }
+  
+  .footer-addresses {
+    margin-bottom: 40px;
+  }
+  .footer-addresses h6{
+    line-height: 1.7;
+  }
+  
+  .address-item,.footer-bottom {
+    display: flex;
+  }
+  .address-item{
+    gap: 25px;
+  }
+  
+  .flag-circle img {
+    width: 47px;
+    height: 47px;
+  }
+  
+  .address-info {
+    margin-left: 10px;
+  }
+  
+  .footer-divider {
+    border-top: 1px solid #51565E;
+    margin: 30px 0;
+  }
+
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .scroll-to-top-wrapper{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .address-info a{
+    font-weight: 700;
+  }
+
