@@ -1,0 +1,54 @@
+.contact-form-section .form {
+    max-width: 1104px;
+    margin: auto;
+}
+
+.contact-form-section input.form-control, .contact-form-section select.form-control {
+    width: 100%;
+    height: 56px;
+    padding: 16px 12px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    box-shadow: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.contact-form-section .react-tel-input .form-control {
+    width: 100%;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    box-shadow: none;
+    padding-left: 48px;
+    font-family: Inter;
+}
+.contact-form-section .react-tel-input .form-control::placeholder{
+    color: #919191;
+}
+
+.contact-form-section textarea.form-control{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.contact-form-section input.form-control::placeholder {
+    color: #5E5E5E;
+    font-weight: 600;
+}
+
+.contact-form-section .react-tel-input .flag-dropdown {
+    background-color: #fff;
+    border: 1px solid #E0E0E0
+}
+
+.contact-form-section form{
+    max-width: 1104px;
+    margin: auto;
+}

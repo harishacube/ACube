@@ -1,0 +1,242 @@
+.hero-wrapper {
+    background: url(../../images/home/hero-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 123px 20px;
+}
+
+.title-wrapper {
+    max-width: 1046px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 37px 44px;
+}
+
+.hero-wrapper .section-subtitle {
+    color: #fff;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.73px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero-wrapper .section-title {
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 77.45px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.explore-offerings-wrapper .title-wrapper {
+    background-color: transparent;
+}
+
+.offerings-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 28px;
+}
+
+.solution-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.solution-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.solution-item p {
+    margin-top: 10px;
+    font-size: var(--base-font-size);
+}
+
+.solution-item:not(:first-child) {
+    border-left: 1px solid #10243E;
+}
+
+.solution-item:last-child {
+    border-right: none;
+}
+
+.solution-item img {
+    margin-bottom: 40px;
+}
+
+.explore-offerings-wrapper {
+    padding: 48px;
+}
+
+.brands-section {
+    max-width: 1073px;
+}
+
+.brand-logos-row {
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.brand-logos-row img {
+    max-width: 100%;
+    height: auto;
+}
+
+.technical-competency-wrapper,
+.product-partners-wrapper {
+    padding: 48px;
+}
+
+.product-partners-wrapper .container-fluid {
+    max-width: 1200px;
+}
+
+.schedule-call-wrapper {
+    padding: 56px 0;
+    background: url(../../images/home/radial-gradient-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.schedule-call-wrapper .container-fluid{
+    max-width: 100%;
+}
+
+.schedule-call-wrapper .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.schedule-call-wrapper .no-gutters > .col,
+.schedule-call-wrapper .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.vertical-divider {
+    border-right: 2.64px solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.link-wrapper{
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+}
+
+.company-insights-section{
+    background-image: url(../../images/home/gradient-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.border-gradient {
+    border-bottom: 1px solid; /* Fallback border */
+    border-image: linear-gradient(90deg, #FFFFFF 0%, rgba(153, 153, 153, 0.1) 90%);
+    border-image-slice: 1;
+}
+
+@media (max-width:992px) {
+    .hero-wrapper {
+        padding: 70px 20px;
+    }
+
+}
+
+@media (max-width:767.5px) {
+    .hero-wrapper .section-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-wrapper .section-title {
+        font-size: 36px;
+    }
+
+    .offerings-section {
+        flex-direction: column;
+    }
+
+    .solution-item:not(:first-child) {
+        border-left: none;
+        border-top: 1px solid #10243E;
+    }
+
+    .solution-item:first-child {
+        border-top: none;
+    }
+
+    .explore-offerings-wrapper {
+        padding: 30px;
+    }
+    .link-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link-wrapper a {
+        margin-bottom: 10px; /* Adjust spacing for mobile view */
+    }
+}
+
+@media (min-width:768px) {
+    .hero-wrapper .section-subtitle {
+        font-size: 24px;
+    }
+
+    .hero-wrapper .section-title {
+        font-size: 42px;
+    }
+
+    .link-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link-wrapper a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:1200px) {
+    .hero-wrapper .section-subtitle {
+        font-size: 28px;
+    }
+
+    .hero-wrapper .section-title {
+        font-size: 48px;
+    }
+    .schedule-call-wrapper .container-fluid{
+        max-width: 1440px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+   
+}
+
+@media (min-width: 768px) {
+  
+}

@@ -1,0 +1,119 @@
+.testimonial-section {
+    background-image: url(../../images/home/gradient-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 50px;
+    padding-bottom: 150px;
+}
+
+.testimonial-section .card-height {
+    min-height: 440px;
+    max-height: 440px;
+}
+
+.testimonial-img-div {
+    position: absolute;
+    top: 0px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.testimonial-img {
+    width: auto;
+    border-radius: 50%;
+    right: -25px;
+    position: relative;
+}
+
+.testimonial-carousel .slick-dots li button:before {
+    color: #224F89;
+    font-size: 13px;
+    line-height: 13px;
+    opacity: 1;
+}
+
+.testimonial-carousel .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+}
+
+.testimonial-carousel .slick-dots {
+    top: 100%;
+    bottom: unset;
+    margin-top: 70px;
+}
+
+.portfolio-carousel-section {
+    background-image: url(../../images/carousel-gradient-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 50px;
+    padding-bottom: 150px;
+}
+
+.portfolio-carousel-section .slick-next,
+.slick-prev {
+    margin-top: 30px;
+    top: 100%;
+    bottom: 0;
+    width: auto;
+    height: auto;
+}
+
+.portfolio-carousel-section .slick-next {
+    right: 10px
+}
+
+.portfolio-carousel-section .slick-prev {
+    right: 95px;
+    left: unset;
+}
+
+.portfolio-title {
+    font-family: Inter;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 131.52px;
+    text-transform: uppercase;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.details-block {
+    max-width: 600px;
+}
+.brand-urls{
+    word-break: break-all;
+}
+
+@media(max-width:992px) {
+    .portfolio-title {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .testimonial-section,
+    .portfolio-carousel-section {
+        padding: 50px 10px;
+    }
+    .testimonial-carousel .slick-dots{
+        bottom: 0;
+        top: 100%;
+        margin: unset;
+    }
+
+    .portfolio-carousel-section .slick-next,
+    .slick-prev {
+        margin-top: -10px;
+    }
+}

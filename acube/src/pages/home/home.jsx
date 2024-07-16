@@ -1,10 +1,31 @@
 import React from "react";
+import Hero from "./sections/hero";
+import './home.css'
+import ExploreOfferings from "./sections/explore-offerings";
+import TechnicalCompetency from "./sections/technical-competency";
+import TestimonialCarousel from "../../components/carousels/testimonial-carousel";
+import ProductPartners from "./sections/product-partners";
+import ScheduleCall from "./sections/schedule-a-call";
+import CompanyInsights from "./sections/company-insights";
+import BrandsCarousel from "../../components/carousels/brands-carousel";
+import ContactForm from "../../components/forms/contact-form";
+import PortfolioCarousel from "../../components/carousels/portfolio-carousel";
 
 const HomePage = () => {
     return (
-        <div>
-            Home
-        </div>
+        <>
+            <Hero />
+            <BrandsCarousel />
+            <CompanyInsights />
+            <ExploreOfferings />
+            <ScheduleCall />
+            <TechnicalCompetency />
+            <PortfolioCarousel />
+            <ProductPartners />
+            <TestimonialCarousel />
+            <ContactForm />
+
+        </>
     )
 };
 
