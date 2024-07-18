@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import { useNavigate } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../images/Acube-logo-blue.svg'
-import carretDown from '../../images/chevron-down.svg'
+import logo from '../../images/logo-white.svg'
+import carretDown from '../../images/chevron-down-white.svg'
 import './header.css'
 import { Button } from 'react-bootstrap';
 
@@ -13,7 +13,7 @@ function preloadImage(url) {
     img.src = url;
 }
 
-function Header() {
+function DarkHeader() {
     const navigate = useNavigate();
     useEffect(() => {
         preloadImage(logo);
@@ -22,7 +22,7 @@ function Header() {
         navigate(path)
     }
     return (
-        <Navbar collapseOnSelect expand="xl" className="bg-body-tertiary page-header fixed-top">
+        <Navbar collapseOnSelect expand="xl" className="page-header fixed-top dark-header navbar-dark">
             <Container fluid>
                 <Navbar.Brand onClick={() => handlePageLink("/")}>
                     <img
@@ -51,7 +51,7 @@ function Header() {
                             Contact US
                         </Nav.Link>
                         <Nav.Link className="nav-btn">
-                            <Button variant="primary" className="text-uppercase">Hire Developers</Button>
+                            <Button variant="secondary" className="text-uppercase">Hire Developers</Button>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -60,4 +60,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default DarkHeader;

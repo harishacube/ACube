@@ -27,7 +27,6 @@ const HomePage = () => {
             <ProductPartners />
             <TestimonialCarousel />
             <ContactForm />
-
         </>
     )
 };

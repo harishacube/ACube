@@ -35,7 +35,7 @@ const ContactFormCard = () => {
                                         <Form.Control type="email" placeholder="Company Email ID" />
                                     </Form.Group>
                                     <Form.Group controlId="formSelect" className="mb-3">
-                                        <Form.Control as="select" value={selectedOption} onChange={handleSelectChange}>
+                                        <Form.Control as="select" aria-label="How can we help you?" value={selectedOption} onChange={handleSelectChange}>
                                             <option value="" disabled hidden>How Can We Help You?</option>
                                             <option value="Mobile app development">Mobile app development</option>
                                             <option value="UI/UX Design">UI/UX Design</option>

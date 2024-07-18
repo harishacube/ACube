@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Button, Tab, Nav } from "react-bootstrap";
 import ContactFormCard from "../../components/forms/contact-form-card";
 import './hire-team.css'
 
 const HireTeam = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const services = [
         "Frontend",
         "Backend",

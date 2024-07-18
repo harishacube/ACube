@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './footer.css';
 import AusFlag from '../../images/Australian-flag.svg'
@@ -10,41 +10,13 @@ import instagram from '../../images/instagram.svg'
 import youtube from '../../images/youtube.svg'
 import message from '../../images/chat.svg'
 import whatsapp from '../../images/whatsapp.svg'
-import arrowTop from '../../images/scroll-top.svg'
+
+const year = new Date().getFullYear();
 
 function Footer() {
-    const [isVisible, setIsVisible] = useState(false);
 
-    const toggleVisibility = () => {
-        if (window.scrollY > 1000) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-        return () => {
-            window.removeEventListener('scroll', toggleVisibility);
-        };
-    }, []);
-
-    let year = new Date().getFullYear();
     return (
         <footer className="footer">
-            {isVisible && (
-                <div className="scroll-to-top-wrapper">
-                    <img src={arrowTop} alt="scroll-to-top" onClick={scrollToTop} loading="lazy" className="scroll-to-top" />
-                </div>
-            )}
             <Container fluid>
                 <Row className="footer-addresses">
                     <Col xs="12" md="6">

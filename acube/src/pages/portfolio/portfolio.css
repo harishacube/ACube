@@ -8,7 +8,7 @@
     flex-wrap: wrap;
 }
 
-.brand-logo {
+.portfolio-section .brand-logo {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
@@ -23,19 +23,19 @@
     font-weight: 500;
 }
 
-.portfolio-items {
+.portfolio-section .portfolio-items {
     max-height: 500px;
     overflow-y: auto;
 }
 
-.portfolio-item {
+.portfolio-section .portfolio-item {
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid #ddd;
     padding: 3rem 0;
 }
 
-.portfolio-img {
+.portfolio-section .portfolio-img {
     max-width: 600px;
     height: 350px;
     width: 100%;
@@ -45,7 +45,7 @@
     justify-content: center;
 }
 
-.portfolio-item.first-item {
+.portfolio-section .portfolio-item.first-item {
     margin-bottom: 2rem;
 }
 .portfolio-items .big-title{

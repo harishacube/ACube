@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    background-image: url('../../images/world.png');
+    background-image: url('../../images/world.webp');
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -49,8 +49,8 @@
   }
 
   .scroll-to-top-wrapper{
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    bottom: 20px;
     right: 20px;
     cursor: pointer;
   }

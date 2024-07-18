@@ -28,3 +28,9 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+.dark-header{
+    background-color: var(--primary-color);
+}
+.dark-header.page-header.navbar-expand-xl .navbar-nav .nav-link{
+color: #fff;
+}

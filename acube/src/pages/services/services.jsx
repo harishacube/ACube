@@ -31,9 +31,9 @@ const Services = () => {
                             <h1 className="text-primary ft-wt-600 mb-4">Build your software Product</h1>
                         </Col>
                         <Col xs="12" lg="7">
-                            <h4 className="text-primary fw-normal">
+                            <p className="text-primary fw-normal">
                                 Our dedicated team mechanism is a one-of-a-kind approach and delivery mechanism that encourages transparency and dynamic team scaling. And provide the advantages of managed capacity as well as managed services model. For efficient execution, we provide a highly skilled development team, a testing professional, a Project manager and in-house experts for guidance. The complete product for the price of a developer.
-                            </h4>
+                            </p>
                             <div className="d-flex gap-4 mt-5">
                                 <ul className="services-list list-unstyled">
                                     {services.slice(0, 6).map((service, index) => (

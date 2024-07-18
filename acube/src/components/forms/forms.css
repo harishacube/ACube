@@ -77,3 +77,10 @@
     line-height: 15.72px;
     text-align: left;
 }
+
+@media(max-width:992px) {
+    .contact-form-section .card-block {
+        padding: 20px;
+    }
+    
+}

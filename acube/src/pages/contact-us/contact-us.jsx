@@ -16,7 +16,7 @@ const ContactUs = () => {
     }, []);
     return (
         <>
-            <section className="contact-us-section py-4">
+            <section className="contact-us-section">
                 <Container fluid>
                     <Row>
                         <Col xs="12">
@@ -101,7 +101,7 @@ const ContactUs = () => {
                                         <Col xs="12" md="4">
                                             <div className="d-flex align-items-center gap-3">
                                                 <div className="flag-circle">
-                                                    <img src={IndianFlag} alt="India Flag" loading="lazy" />
+                                                    <img src={AusFlag} alt="Aus Flag" loading="lazy" />
                                                 </div>
                                                 <div className="address-info">
                                                     <a href="tel:+918042021000" className="text-primary"><h4>+91 80 4202 1000</h4></a>

@@ -36,7 +36,7 @@ const ContactForm = () => {
                     <Row className="mb-3 gap-3 gap-lg-0">
                         <Col xs="12" lg="4">
                             <Form.Group controlId="formSelect">
-                                <Form.Control as="select" value={selectedOption} onChange={handleSelectChange}>
+                                <Form.Control aria-label="How can we help you?" as="select" value={selectedOption} onChange={handleSelectChange}>
                                     <option value="" disabled hidden>How Can We Help You?</option>
                                     <option value="Mobile app development">Mobile app development</option>
                                     <option value="UI/UX Design">UI/UX Design</option>

@@ -66,7 +66,7 @@ const Portfolio = () => {
                     <div className="mx-auto">
                         <Row className="d-flex justify-content-between mb-4 flex-wrap">
                             {logos.map((logo, index) => (
-                                <Col key={index} xs="6" md="4" lg="2" className="text-center text-lg-start custom-col mb-4">
+                                <Col key={index} xs="6" md="4" lg="2" className="text-center custom-col mb-4">
                                     <a href={logo.link}>
                                         <img src={logo.src} alt={logo.alt} className="brand-logo" loading="lazy" />
                                         <div className="mt-2">
