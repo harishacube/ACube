@@ -1,0 +1,40 @@
+.hire-team-section {
+    padding: 2rem 0;
+}
+
+.hire-team-section .btn-link{
+    color: var(--primary-color);
+}
+
+.hire-team-section .nav-pills .nav-link {
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--primary-color);
+    width: max-content;
+}
+
+
+.hire-team-section .nav-pills .nav-link.active {
+    background-color:var(--primary-color);
+    color: #fff;
+}
+
+.hire-team-section .list-unstyled {
+    padding-left: 0;
+}
+
+.hire-team-section .services-list {
+    margin-top: 2rem;
+}
+
+.hire-team-section .btn-link:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}

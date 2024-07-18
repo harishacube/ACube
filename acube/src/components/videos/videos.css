@@ -1,0 +1,14 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

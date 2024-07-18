@@ -38,6 +38,7 @@ h5 {
 
 h6 {
   font-size: var(--small-font-size);
+  line-height: 27px;
 }
 
 .big-title {
@@ -63,6 +64,10 @@ a {
 
 .text-primary{
   color: var(--primary-color)!important;
+}
+
+.mb-120{
+  margin-bottom: 120px;
 }
 
 @media (max-width: 767.5px) {
@@ -143,4 +148,8 @@ a {
 
 .mt-120 {
   margin-top: 120px;
+}
+
+.border-end {
+  border-right: 1px solid #D7CDCD;
 }

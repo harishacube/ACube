@@ -1,0 +1,98 @@
+.portfolio-section {
+    padding: 2rem 0;
+}
+
+.brand-logos-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.brand-logo {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-link {
+    display: block;
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.portfolio-items {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 3rem 0;
+}
+
+.portfolio-img {
+    max-width: 600px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item.first-item {
+    margin-bottom: 2rem;
+}
+.portfolio-items .big-title{
+    font-family: Inter;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    .custom-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (max-width:767.5px){
+    .portfolio-items .big-title{
+        font-size: 40px;
+        line-height: 54px;
+    }
+    .portfolio-item{
+        padding: 1rem 0;
+    }
+    .portfolio-img{
+        height: 280px;
+    }
+}
+
+@media(min-width:767.5px) and (max-width:1200px){
+    .portfolio-items .big-title{
+        font-size: 52px;
+        line-height: 66px;
+    }
+}
+
+.portfolio-items::-webkit-scrollbar {
+    width: 9px;
+}
+
+.portfolio-items::-webkit-scrollbar-track {
+    background: #D9D9D9;
+    border-radius: 8px;
+}
+
+.portfolio-items::-webkit-scrollbar-thumb {
+    background: #868686;
+    border-radius: 8px;
+}

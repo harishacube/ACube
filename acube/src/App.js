@@ -2,10 +2,14 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import HomePage from './pages/home/home';
-import ServicesPage from './pages/services/services';
 import DefaultLayout from './layouts/default-layout';
+import HireTeam from './pages/hire-team/hire-team';
+import ContactUs from './pages/contact-us/contact-us';
+import Portfolio from './pages/portfolio/portfolio';
+import Services from './pages/services/services';
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -15,7 +19,10 @@ function App() {
             path="/"
             element={<HomePage />}
           />
-          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/hire-team" element={<HireTeam />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Route>
 
       </Routes>

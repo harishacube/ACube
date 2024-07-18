@@ -33,10 +33,10 @@ function Header() {
                             Hire Team
                             <img src={carretDown} alt='carret-down' loading="lazy" />
                         </Nav.Link>
-                        <Nav.Link onClick={() => handlePageLink("/hire-team")}>
+                        <Nav.Link onClick={() => handlePageLink("/portfolio")}>
                             Portfolio
                         </Nav.Link>
-                        <Nav.Link onClick={() => handlePageLink("/hire-team")}>
+                        <Nav.Link onClick={() => handlePageLink("/contact-us")}>
                             Contact US
                         </Nav.Link>
                         <Nav.Link className="nav-btn">
