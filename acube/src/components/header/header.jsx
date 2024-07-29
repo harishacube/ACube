@@ -50,7 +50,7 @@ function Header() {
                         <Nav.Link onClick={() => handlePageLink("/contact-us")}>
                             Contact US
                         </Nav.Link>
-                        <Nav.Link className="nav-btn">
+                        <Nav.Link className="nav-btn px-2 py-0">
                             <Button variant="primary" className="text-uppercase">Hire Developers</Button>
                         </Nav.Link>
                     </Nav>

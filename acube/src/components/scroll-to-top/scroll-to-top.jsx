@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import arrowTop from '../images/scroll-top.svg'
+import arrowTop from '../../images/scroll-top.svg'
 
 const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleVisibility = () => {
-        if (window.pageYOffset > 500) {
+        if (window.scrollY > 500) {
             setIsVisible(true);
         } else {
             setIsVisible(false);

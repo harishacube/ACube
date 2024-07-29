@@ -38,3 +38,66 @@
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+
+.pricing-cards-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.pricing-card {
+    transition: transform 0.3s ease-in-out;
+    background: #10243E;
+    border-radius: 8px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing-card .card-body{
+    padding: 80px 20px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 5.3px 0px #00000080;
+}
+.pricing-card.selected {
+    box-shadow: 0px 8px 5.3px 0px #00000080;
+    transform: translateY(-20px);
+}
+
+.pricing-card.selected .pricing-label, .pricing-card:hover .pricing-label{
+    display: block;
+}
+
+
+.hire-team.layout-wrapper .benefits-section ul li{
+    line-height: 44px;
+}
+
+.pricing-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: #ADD1FF;
+    color: #10243e;
+    max-width: 330px;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+    .pricing-card .card-body{
+        padding: 40px 20px;
+    }
+    .pricing-label{
+        padding: 10px;
+    }
+}

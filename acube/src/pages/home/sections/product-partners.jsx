@@ -6,6 +6,7 @@ import microsoft from '../../../images/home/microsoft.svg'
 import aws from '../../../images/home/aws.svg'
 import googleCloud from '../../../images/home/google-cloud.svg'
 import ambitionbox from '../../../images/home/ambitionbox.svg'
+import clutch from '../../../images/home/clutch-review.svg'
 import { Container, Row, Col } from "react-bootstrap";
 
 const ProductPartners = () => {
@@ -13,7 +14,7 @@ const ProductPartners = () => {
         <>
             <section className="product-partners-wrapper">
                 <Container fluid>
-                    <Row className="align-items-center d-flex position-relative">
+                    <Row className="d-flex position-relative">
                         <Col xs="12" lg="6" className="product-section">
                             <h1 className="text-primary ft-wt-600 text-uppercase mb-5 text-center text-lg-start">Our Products</h1>
                             <Row>
@@ -36,6 +37,11 @@ const ProductPartners = () => {
                         <Col xs={12} lg={5} className="partner-section mt-5 mt-lg-0">
                             <h1 className="text-primary ft-wt-600 text-uppercase mb-5 text-center text-lg-start">Our Partners</h1>
                             <Row>
+                                <Col xs="12">
+                                    <a href="https://clutch.co/profile/acubetech-solutions#highlights" rel="noreferrer" target="_blank" >
+                                        <img src={clutch} alt="clutch" loading="lazy" className="img-fluid" />
+                                    </a>
+                                </Col>
                                 <Col xs="6" lg="6" className="d-flex align-items-center justify-content-center my-2">
                                     <img src={microsoft} alt="microsoft" loading="lazy" className="img-fluid" />
                                 </Col>

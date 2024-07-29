@@ -51,7 +51,7 @@ const ContactFormCard = () => {
                                     </Form.Group>
                                     <Form.Group controlId="formPhone" className="mb-3">
                                         <PhoneInput
-                                            country={'in'}
+                                            country={'us'}
                                             inputProps={{
                                                 name: 'phone',
                                                 required: true,

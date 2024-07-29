@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Hero from "./sections/hero";
 import './home.css'
 import ExploreOfferings from "./sections/explore-offerings";
@@ -12,9 +12,7 @@ import ContactForm from "../../components/forms/contact-form";
 import PortfolioCarousel from "../../components/carousels/portfolio-carousel";
 
 const HomePage = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+
     return (
         <>
             <Hero />

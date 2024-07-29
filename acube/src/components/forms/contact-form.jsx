@@ -3,16 +3,17 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import './forms.css'
+import { useScroll } from "../../context/scroll-context";
 
 const ContactForm = () => {
-
+    const { formRef } = useScroll();
     const [selectedOption, setSelectedOption] = useState('');
 
     const handleSelectChange = (event) => {
         setSelectedOption(event.target.value);
     };
     return (
-        <section className="contact-form-section py-5">
+        <section className="contact-form-section py-5" ref={formRef}>
             <Container fluid>
                 <h1 className="text-center mb-4 text-primary ft-wt-600 text-uppercase">How May We Assist You?</h1>
                 <Form>
@@ -54,7 +55,7 @@ const ContactForm = () => {
                         <Col xs="12" lg="4">
                             <Form.Group controlId="formPhone">
                                 <PhoneInput
-                                    country={'in'}
+                                    country={'us'}
                                     inputProps={{
                                         name: 'phone',
                                         required: true,

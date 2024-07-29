@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import './services.css'
 import ContactFormCard from "../../components/forms/contact-form-card";
 
 const Services = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     const services = [
         "Artificial Intelligence",

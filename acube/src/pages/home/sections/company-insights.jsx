@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { useScroll } from "../../../context/scroll-context";
 
 
 const CompanyInsights = () => {
+    const { scrollToForm } = useScroll();
     return (
         <section className="company-insights-section">
             <Container fluid>
@@ -14,7 +16,7 @@ const CompanyInsights = () => {
                                 At Acube, we prioritize your success by providing dynamic,
                                 AI-driven Agile product teams that are always ready to propel your growth. We embody a connected world, delivering innovative and customer-focused IT solutions. Our commitment is to empower Enterprises, Associates, and Society to thrive and ascend together.
                             </p>
-                            <Button variant="secondary" className="text-uppercase mt-4">know more</Button>
+                            <Button variant="secondary" className="text-uppercase mt-4" onClick={scrollToForm}>know more</Button>
                         </div>
                     </Col>
                     <Col xs="12" lg="4" className="mb-4 mb-md-0 border-start">

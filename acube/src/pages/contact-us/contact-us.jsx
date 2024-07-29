@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import './contact-us.css'
 import ContactFormCard from "../../components/forms/contact-form-card";
@@ -11,9 +11,7 @@ import ContactForm from "../../components/forms/contact-form";
 import TestimonialVideoPlayer from "../../components/videos/testimonial-video";
 
 const ContactUs = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+
     return (
         <>
             <section className="contact-us-section">

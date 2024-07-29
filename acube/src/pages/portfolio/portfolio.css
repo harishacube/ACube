@@ -16,7 +16,7 @@
 
 .brand-link {
     display: block;
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--primary-color);
     font-size: 16px;
     line-height: 27px;
@@ -55,7 +55,12 @@
     line-height: 84px;
     text-align: left;
 }
-
+.key-insights-section .content-wrapper{
+    max-width: 974px;
+}
+.tech-img-block{
+    max-width: 800px;
+}
 @media (min-width: 992px) {
     .custom-col {
         flex: 0 0 20%;

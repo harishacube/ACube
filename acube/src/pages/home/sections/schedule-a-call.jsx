@@ -22,7 +22,9 @@ const ScheduleCall = () => {
                         <p className="text-white">
                             At Acube, our commitment to innovation and deep industry expertise ensures you stay ahead of the curve.
                         </p>
-                        <Button variant="secondary" className="text-uppercase mt-5">Schedule a call</Button>
+                        <a href="https://calendly.com/acube/discovery-call?month=2024-07" rel="noreferrer" target="_blank">
+                            <Button variant="secondary" className="text-uppercase mt-5">Schedule a 30 mins discovery call</Button>
+                        </a>
                     </Col>
                 </Row>
             </Container>

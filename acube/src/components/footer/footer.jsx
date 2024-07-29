@@ -97,7 +97,7 @@ function Footer() {
                             <Col xs="12" xl="4">
                                 <div className="d-flex align-items-center gap-3">
                                     <div className="flag-circle">
-                                        <img src={IndianFlag} alt="India Flag" loading="lazy" />
+                                        <img src={AusFlag} alt="Aus Flag" loading="lazy" />
                                     </div>
                                     <div className="address-info">
                                         <a href="tel:+918042021000"><h4>+91 80 4202 1000</h4></a>
@@ -124,9 +124,9 @@ function Footer() {
                             </Button>
                         </div>
                         <div>
-                            <Button variant="link" className="p-0">
+                            <a href="https://wa.me/919686077111/?text=Hi" target="_blank" rel="noreferrer" className="p-0">
                                 <img src={whatsapp} alt="whatsapp" loading="lazy" />
-                            </Button>
+                            </a>
                         </div>
                     </Col>
                 </Row>
