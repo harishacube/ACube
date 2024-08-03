@@ -96,6 +96,7 @@ function Footer() {
                                 <div className="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
                                     <div className="flag-circle">
                                         <img src={AusFlag} alt="Aus Flag" loading="lazy" />
+                                        <img src={AusFlag} alt="Aus Flag" loading="lazy" />
                                     </div>
                                     <div className="address-info">
                                         <a href="tel:+918042021000"><h4>+91 80 4202 1000</h4></a>

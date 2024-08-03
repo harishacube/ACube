@@ -7,6 +7,7 @@ import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
 import HireTeamHeader from "../components/header/hire-team-header";
 
 const DefaultLayout = () => {
+
     const location = useLocation();
     const currentPath = location.pathname;
 
