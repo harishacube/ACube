@@ -234,3 +234,18 @@ a {
   box-shadow: none;
 }
 
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.invalid-feedback{
+  position: absolute;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-family);
+}
+
+.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+  background-color: #8d8d8d;
+  cursor: not-allowed;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import testimonialVideo from "../../videos/client-testimonial.mp4";
+import testimonialVideo from "../../videos/office-tour.mp4";
 import thumbnail from '../../images/office-thumbnail.webp'
 import "./videos.css";
 
