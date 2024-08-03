@@ -89,12 +89,15 @@ const ContactForm = () => {
             message: formValues.message
         };
 
-        axios.post('http://40.114.109.6:3000/api/sendmail', params)
-            .then(response => {
-                console.log('Email sent successfully:', response.data);
-                setSuccessMessage('Thank you for reaching out! Your message has been sent successfully. We will get back to you shortly.');
-                setErrorMessage('');
-            })
+        axios.post('http://40.114.109.6:3000/api/sendmail', params, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(response => {
+            console.log('Email sent successfully:', response.data);
+            setSuccessMessage('Thank you for reaching out! Your message has been sent successfully. We will get back to you shortly.');
+            setErrorMessage('');
+        })
             .catch(error => {
                 console.error('There was an error sending the email:', error);
                 setSuccessMessage('');
