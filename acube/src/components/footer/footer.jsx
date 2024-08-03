@@ -8,8 +8,6 @@ import linkedin from '../../images/linkedin.svg'
 import facebook from '../../images/fb.svg'
 import instagram from '../../images/instagram.svg'
 import youtube from '../../images/youtube.svg'
-import message from '../../images/chat.svg'
-import whatsapp from '../../images/whatsapp.svg'
 
 const year = new Date().getFullYear();
 
@@ -19,10 +17,10 @@ function Footer() {
         <footer className="footer">
             <Container fluid>
                 <Row className="footer-addresses">
-                    <Col xs="12" md="6">
+                    <Col xs="12" md="6" className="pb-3 pb-lg-0">
                         <Row className="gap-3 gap-lg-0">
-                            <Col xs="12">
-                                <p className="mb-4 ft-wt-600">Global Presence</p>
+                            <Col xs="12" className="text-center text-lg-start">
+                                <p className="mb-4 ft-wt-600 block-title">Global Presence</p>
                             </Col>
                             <Col xs="12" xl="6">
                                 <div className="address-item">
@@ -30,7 +28,7 @@ function Footer() {
                                         <img src={USAFlag} alt='USA Flag' loading="lazy" />
                                     </div>
                                     <div className="address-info">
-                                        <p>ACube USA LLC</p>
+                                        <p className="ft-wt-500">ACube USA LLC</p>
                                         <h6>401 Ryland St. STE 200-A,<br></br> Reno, WASHOE COUNTY,<br></br> NV 89502 USA</h6>
                                     </div>
                                 </div>
@@ -41,17 +39,17 @@ function Footer() {
                                         <img src={AusFlag} alt='Aus Flag' loading="lazy" />
                                     </div>
                                     <div className="address-info">
-                                        <p>Australia</p>
+                                        <p className="ft-wt-500">Australia</p>
                                         <h6>ACubetech solutions <br></br>(Engenesis International)<br></br>8b/277 Lane Cove Rd<br></br>Macquarie Park, NSW<br></br>Australia, 2113</h6>
                                     </div>
                                 </div>
                             </Col>
                         </Row>
                     </Col>
-                    <Col xs="12" md="6" className="mt-4 mt-md-0">
+                    <Col xs="12" md="6" className="mt-4 mt-md-0 pb-3 pb-lg-0">
                         <Row className="gap-3 gap-lg-0">
-                            <Col xs="12">
-                                <p className="mb-4 ft-wt-600">Offices and Development Centers</p>
+                            <Col xs="12" className="text-center text-lg-start">
+                                <p className="mb-4 ft-wt-600 block-title">Offices and Development Centers</p>
                             </Col>
                             <Col xs="12" xl="6">
                                 <div className="address-item">
@@ -59,7 +57,7 @@ function Footer() {
                                         <img src={IndianFlag} alt='India Flag' loading="lazy" />
                                     </div>
                                     <div className="address-info">
-                                        <p>Bangalore</p>
+                                        <p className="ft-wt-500">Bangalore</p>
                                         <h6>ACubetech solutions Pvt Ltd<br></br>Brigade IRV, 3rd Floor.<br></br>Nellurhalli, Whitefield,<br></br>Bangalore - 560066, India.</h6>
                                     </div>
                                 </div>
@@ -70,7 +68,7 @@ function Footer() {
                                         <img src={IndianFlag} alt='India Flag' loading="lazy" />
                                     </div>
                                     <div className="address-info">
-                                        <p>Chennai</p>
+                                        <p className="ft-wt-500">Chennai</p>
                                         <h6>ACubetech solutions Pvt Ltd<br></br>Akshaya CUBE, 6th Floor.<br></br>OMR Thoraipakkam, Near BSR Mall,<br></br>Chennai - 600096, India.</h6>
                                     </div>
                                 </div>
@@ -79,13 +77,13 @@ function Footer() {
                     </Col>
                 </Row>
                 <Row className="gap-3 gap-lg-0">
-                    <Col xs="12">
-                        <p className="mb-4 ft-wt-600">On-Call Support</p>
+                    <Col xs="12" className="text-center text-lg-start">
+                        <p className="mb-4 ft-wt-600 block-title">On-Call Support</p>
                     </Col>
                     <Col xs="12" lg="8" xl="10">
                         <Row className=" gap-3 gap-xl-0">
                             <Col xs="12" xl="4">
-                                <div className="d-flex align-items-center gap-3">
+                                <div className="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
                                     <div className="flag-circle">
                                         <img src={USAFlag} alt="USA Flag" loading="lazy" />
                                     </div>
@@ -95,9 +93,9 @@ function Footer() {
                                 </div>
                             </Col>
                             <Col xs="12" xl="4">
-                                <div className="d-flex align-items-center gap-3">
+                                <div className="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
                                     <div className="flag-circle">
-                                        <img src={IndianFlag} alt="India Flag" loading="lazy" />
+                                        <img src={AusFlag} alt="Aus Flag" loading="lazy" />
                                     </div>
                                     <div className="address-info">
                                         <a href="tel:+918042021000"><h4>+91 80 4202 1000</h4></a>
@@ -105,7 +103,7 @@ function Footer() {
                                 </div>
                             </Col>
                             <Col xs="12" xl="4">
-                                <div className="d-flex align-items-center gap-3">
+                                <div className="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
                                     <div className="flag-circle">
                                         <img src={IndianFlag} alt="India Flag" loading="lazy" />
                                     </div>
@@ -117,18 +115,13 @@ function Footer() {
                         </Row>
                     </Col>
 
-                    <Col xs="12" lg="4" xl="2" className="d-flex gap-4 align-items-center justify-content-start justify-content-lg-center justify-content-xl-end mt-4 mt-lg-0">
+                    {/* <Col xs="12" lg="4" xl="2" className="d-flex gap-4 align-items-center justify-content-end mt-4 mt-lg-0">
                         <div>
                             <Button variant="link" className="p-0">
                                 <img src={message} alt="chat box" loading="lazy" />
                             </Button>
                         </div>
-                        <div>
-                            <Button variant="link" className="p-0">
-                                <img src={whatsapp} alt="whatsapp" loading="lazy" />
-                            </Button>
-                        </div>
-                    </Col>
+                    </Col> */}
                 </Row>
                 <hr className="footer-divider" />
                 <Row className="footer-bottom align-items-center gap-4 gap-lg-0">

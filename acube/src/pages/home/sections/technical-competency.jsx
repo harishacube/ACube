@@ -24,8 +24,8 @@ const TechnicalCompetency = () => {
         <>
             <section className="technical-competency-wrapper">
                 <Container className="content-block">
-                    <div className="text-center mb-4">
-                        <h1 className="big-title ft-wt-600 text-uppercase text-primary">Technical Competency</h1>
+                    <div className="text-center mb-5">
+                        <h1 className="big-title ft-wt-600 text-uppercase text-primary mb-3">Technical Competency</h1>
                         <p className="mb-0 text-primary">
                             Leverage our expertise in tools and technologies for transformative solutions, facilitating faster development, error-free coding, and numerous lasting benefits for your enterprise.
                         </p>

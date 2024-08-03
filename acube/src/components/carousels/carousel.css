@@ -8,8 +8,8 @@
 }
 
 .testimonial-section .card-height {
-    min-height: 440px;
-    max-height: 440px;
+    min-height: 480px;
+    max-height: 480px;
 }
 
 .testimonial-img-div {
@@ -96,24 +96,57 @@
     word-break: break-all;
 }
 
+.testimonial-carousel .content-block{
+    margin-top: 50px;
+}
+
 @media(max-width:992px) {
     .portfolio-title {
-        font-size: 42px;
-        line-height: 60px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .top-text{
+        font-size: 9px;
+        line-height: 12px;
     }
 
     .testimonial-section,
     .portfolio-carousel-section {
-        padding: 50px 10px;
+        padding: 35px 10px;
+    }
+    .portfolio-carousel-section,.testimonial-section{
+        padding-bottom: 100px;
     }
     .testimonial-carousel .slick-dots{
         bottom: 0;
         top: 100%;
         margin: unset;
+        margin-top: 40px;
     }
 
     .portfolio-carousel-section .slick-next,
     .slick-prev {
-        margin-top: -10px;
+        margin-top: 30px;
+    }
+    .testimonial-img{
+        width: 66px;
+        height: 66px;
+        top: 15px;
+    } 
+    .testimonial-carousel .content-block{
+        margin-top: 20px;
+    }
+    .testimonial-carousel .content-block h6{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .testimonial-carousel .content-block h4{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .testimonial-section .card-height {
+        min-height: 230px;
+        max-height: 230px;
     }
 }

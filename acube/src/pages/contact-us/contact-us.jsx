@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import './contact-us.css'
 import ContactFormCard from "../../components/forms/contact-form-card";
@@ -9,11 +9,10 @@ import BrandsCarousel from "../../components/carousels/brands-carousel";
 import TestimonialCarousel from "../../components/carousels/testimonial-carousel";
 import ContactForm from "../../components/forms/contact-form";
 import TestimonialVideoPlayer from "../../components/videos/testimonial-video";
+import AcubeIntroVideo from "../../components/videos/acube-video";
 
 const ContactUs = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+
     return (
         <>
             <section className="contact-us-section">
@@ -124,6 +123,7 @@ const ContactUs = () => {
                         </Col>
                     </Row>
                 </Container>
+                <AcubeIntroVideo />
                 <TestimonialVideoPlayer />
                 <BrandsCarousel />
                 <TestimonialCarousel />

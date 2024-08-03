@@ -70,19 +70,50 @@ a {
   margin-bottom: 120px;
 }
 
-@media (max-width: 767.5px) {
+.bg-primary{
+  background-color: var(--primary-color)!important;
+}
+
+.ft-16{
+  font-size: var(--small-font-size);
+  line-height: 27px;
+}
+
+.btn {
+  border-radius: 4px;
+  border: none;
+  height: 48px;
+  font-family: Inter;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.main-section{
+  margin-top: 116px;
+}
+
+@media (max-width: 991.5px) {
   :root {
-    --base-font-size: 20px;
+    --base-font-size: 16px;
     --small-font-size: 14px;
     --sm-medium-font-size: 16px;
     --medium-font-size: 18px;
     --lg-medium-font-size: 20px;
-    --large-font-size: 30px;
+    --large-font-size: 20px;
     --xl-font-size: 40px;
+  }
+  .btn{
+    padding: 12px 10px;
+    height: auto;
+    width: 100%;
+  }
+  .big-title{
+    font-size:20px;
+    line-height: 24px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   :root {
     --base-font-size: 24px;
     --small-font-size: 16px;
@@ -106,18 +137,17 @@ a {
   }
 }
 
+@media(max-width: 1200px){
+  .main-section{
+    margin-top: 96.6px;
+  }
+}
+
 .container-fluid {
   max-width: 1440px;
 }
 
-.btn {
-  border-radius: 4px;
-  border: none;
-  height: 48px;
-  font-family: Inter;
-  font-weight: 600;
-  padding: 12px 24px;
-}
+
 
 .btn-primary,
 .btn-primary:active,
@@ -150,6 +180,57 @@ a {
   margin-top: 120px;
 }
 
+.mt-116{
+  margin-top: 116px;
+}
+
 .border-end {
   border-right: 1px solid #D7CDCD;
 }
+
+
+.accordion-button:focus{
+  box-shadow: none;
+}
+.faq-section .accordion-button{
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  padding: 18.5px 20px;
+  color: #5E5E5E;
+}
+.faq-section .accordion-body{
+  font-size: 16px;
+  color: #10243e;
+}
+.faq-section .accordion{
+  max-width: 700px;
+  margin: auto;
+}
+.faq-section{
+  background: rgba(16, 36, 62, 0.05);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #a5a5a57d;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5a5a57d;
+}
+
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+

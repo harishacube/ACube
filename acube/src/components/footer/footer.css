@@ -1,61 +1,96 @@
 .footer {
-    position: relative;
-    background-image: url('../../images/world.webp');
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    padding: 55px 10px;
-  }
-  
-  .footer-addresses {
-    margin-bottom: 40px;
-  }
-  .footer-addresses h6{
-    line-height: 1.7;
-  }
-  
-  .address-item,.footer-bottom {
-    display: flex;
-  }
-  .address-item{
-    gap: 25px;
-  }
-  
-  .flag-circle img {
-    width: 47px;
-    height: 47px;
-  }
-  
-  .address-info {
-    margin-left: 10px;
-  }
-  
-  .footer-divider {
-    border-top: 1px solid #51565E;
-    margin: 30px 0;
+  position: relative;
+  background-image: url('../../images/world.webp');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 55px 10px;
+}
+
+.footer-addresses {
+  margin-bottom: 40px;
+}
+
+.footer-addresses h6 {
+  line-height: 1.7;
+}
+
+.address-item,
+.footer-bottom {
+  display: flex;
+}
+
+.address-item {
+  gap: 25px;
+}
+
+.flag-circle img {
+  width: 47px;
+  height: 47px;
+}
+
+.address-info {
+  margin-left: 10px;
+}
+
+.footer-divider {
+  border-top: 1px solid #51565E;
+  margin: 30px 0;
+}
+
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.scroll-to-top-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.address-info a {
+  font-weight: 700;
+}
+
+.footer-addresses .border-bottom{
+  border-bottom: 1px solid transparent;
+}
+
+@media(max-width:992px) {
+  .footer {
+    padding: 45px 30px;
   }
 
-  
-  .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 28px;
+  .address-item {
+    max-width: 293px;
+    margin: auto;
   }
-  
-  .social-icon {
-    color: #fff;
+
+  .address-info p {
     font-size: 20px;
-    text-decoration: none;
   }
 
-  .scroll-to-top-wrapper{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
+  .footer-addresses .border-bottom {
+    border-bottom: 1px solid #484848 !important;
   }
 
-  .address-info a{
-    font-weight: 700;
+  .footer .block-title {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
   }
 
+  .footer h6{
+    font-size: 16px;
+  }
+}

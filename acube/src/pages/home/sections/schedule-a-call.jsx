@@ -17,12 +17,14 @@ const ScheduleCall = () => {
                     <Col xs="12" lg="6" className="mb-4 mb-md-0">
                         <img src={aiHand} alt="AIPoster" loading="lazy" className="img-fluid w-100" style={{ marginLeft: '-15px' }} />
                     </Col>
-                    <Col xs="12" lg="6" className="text-center text-lg-end px-4">
-                        <h2 className="text-white big-title ft-wt-600 mb-4">Driving Your Business with Cutting-Edge Innovation</h2>
+                    <Col xs="12" lg="6" className="text-center text-lg-end px-2 px-lg-4">
+                        <h2 className="text-white big-title ft-wt-600 mb-3 mb-lg-4">Driving Your Business with Cutting-Edge Innovation</h2>
                         <p className="text-white">
                             At Acube, our commitment to innovation and deep industry expertise ensures you stay ahead of the curve.
                         </p>
-                        <Button variant="secondary" className="text-uppercase mt-5">Schedule a call</Button>
+                        <a href="https://calendly.com/acube/discovery-call?month=2024-07" rel="noreferrer" target="_blank">
+                            <Button variant="secondary" className="text-uppercase mt-3 mt-lg-5">Schedule a 30 mins discovery call</Button>
+                        </a>
                     </Col>
                 </Row>
             </Container>

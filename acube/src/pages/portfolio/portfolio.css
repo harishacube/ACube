@@ -16,7 +16,7 @@
 
 .brand-link {
     display: block;
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--primary-color);
     font-size: 16px;
     line-height: 27px;
@@ -55,7 +55,12 @@
     line-height: 84px;
     text-align: left;
 }
-
+.key-insights-section .content-wrapper{
+    max-width: 974px;
+}
+.tech-img-block{
+    max-width: 800px;
+}
 @media (min-width: 992px) {
     .custom-col {
         flex: 0 0 20%;
@@ -65,14 +70,18 @@
 
 @media (max-width:767.5px){
     .portfolio-items .big-title{
-        font-size: 40px;
-        line-height: 54px;
+        font-size: 20px;
+        line-height: 24px;
     }
-    .portfolio-item{
+    /* .portfolio-item{
         padding: 1rem 0;
-    }
+    } */
     .portfolio-img{
         height: 280px;
+    }
+
+    .portfolio-section .portfolio-item{
+        padding: 1.5rem 0;
     }
 }
 

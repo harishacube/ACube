@@ -38,3 +38,150 @@
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+
+.pricing-cards-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.pricing-card {
+    transition: transform 0.3s ease-in-out;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+}
+
+.pricing-card .card-body{
+    padding: 80px 20px;
+}
+
+.pricing-card.selected {
+    box-shadow: 0px 8px 5.3px 0px #00000080;
+    transform: translateY(-20px);
+}
+
+.hire-team.layout-wrapper .benefits-section ul li{
+    line-height: 44px;
+}
+
+.pricing-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: #ADD1FF;
+    color: var(--primary-color);
+    max-width: 330px;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+}
+
+
+@media (max-width: 767.98px) {
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+    .pricing-card .card-body{
+        padding: 40px 20px;
+    }
+    .pricing-label{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 992px){
+    .pricing-card.selected {
+        box-shadow: none;
+        transform: unset;
+    }
+    .pricing-card .big-title{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .pricing-cards-section {
+        padding: 2rem 0;
+    }
+}
+
+
+
+/* header.css */
+
+/* hire-team.css */
+.hire-team-section.mega-menu-content {
+    padding: 10px;
+}
+
+.hire-team-section .mobile-tab-content {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hire-team-section .mobile-tab-content .btn{
+    text-align: left;
+    padding: 8px;
+    text-transform: capitalize!important;
+    text-decoration: none;
+}
+
+/* .hire-team-section .nav-pills .nav-link {
+    color: var(--primary-color);
+    background-color: transparent;
+} */
+
+/* Mobile Styles */
+@media (max-width: 1200px) {
+    .page-header .mega-menu {
+        position: relative;
+        top: 0;
+        max-height: calc(100vh - 116px); 
+    }
+
+    .hire-team-section .contact-form-card {
+        display: none;
+    }
+
+    .mobile-mega-menu {
+        display: block;
+        padding: 10px;
+        background: #fff;
+        width: 100%;
+        max-height: calc(100vh - 66px); 
+        position: relative;
+        z-index: 1050;
+        border-radius: 8px;
+    }
+
+    .mega-menu {
+        display: none;
+    }
+
+    .mobile-mega-menu + .nav-link {
+        padding-top: 20px;
+    }
+
+    .hire-team-section .nav-link {
+        cursor: pointer;
+    }
+
+    .hire-team-section .nav-pills .nav-link.active {
+        color: var(--primary-color);
+        background-color: transparent;
+    }
+
+    .hire-team-section {
+        padding: 0;
+        overflow: hidden; 
+    }
+
+    .hire-team-section .nav-pills .nav-link{
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+}

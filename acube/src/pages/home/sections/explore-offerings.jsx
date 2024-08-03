@@ -1,8 +1,8 @@
 import React from "react";
 import AI from '../../../images/home/artificial-intelligence.svg'
 import UI from '../../../images/home/ui.svg'
-import mobileDevelopment from '../../../images/home/mobile-development.svg'
-import cube from '../../../images/home/cube.svg'
+import mobileDevelopment from '../../../images/home/computer.svg'
+import devops from '../../../images/home/devops-icon.svg'
 import { Button, Container } from "react-bootstrap";
 
 const ExploreOfferings = () => {
@@ -21,11 +21,11 @@ const ExploreOfferings = () => {
                         </div>
                         <div className="solution-item">
                             <img src={mobileDevelopment} alt="mobile development" loading="lazy" />
-                            <h6 className="ft-wt-600 text-uppercase text-primary">Web Apps Development</h6>
+                            <h6 className="ft-wt-600 text-uppercase text-primary">Web & Mobile Apps Development</h6>
                         </div>
                         <div className="solution-item">
-                            <img src={cube} alt="blockchain" loading="lazy" />
-                            <h6 className="ft-wt-600 text-uppercase text-primary">Blockchain Developer</h6>
+                            <img src={devops} alt="devops" loading="lazy" />
+                            <h6 className="ft-wt-600 text-uppercase text-primary">devops</h6>
                         </div>
                         <div className="solution-item">
                             <img src={UI} alt="ui" loading="lazy" />

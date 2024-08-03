@@ -23,3 +23,74 @@
 .services-section{
     padding: 2rem 0;
 }
+
+/* subpages css */
+
+.layout-wrapper .hero-section{
+    /* background-image: url(../../images/services/hero.webp); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+}
+
+.layout-wrapper .content-block{
+    max-width: 750px;
+    text-align: left;
+}
+
+.layout-wrapper .ad-section{
+  background-color: #10243E;
+  padding: 50px 0;
+}
+
+.layout-wrapper .ad-section .content-block{
+    max-width: 620px;
+}
+
+.benefits-section ul li{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+}
+.benefits-section ul{
+    max-width: 1190px;
+}
+
+.badge.bg-secondary{
+    background-color: #F5F5F5!important;
+    color: #10243E;
+}
+
+.fields-badge-wrapper .badge{
+    padding: 18px 36px;
+    border-radius: 6px;
+}
+
+.fields-badge-wrapper .badges-block{
+    max-width: 950px;
+    margin: auto;
+}
+
+@media(max-width:992px){
+    .layout-wrapper .ad-section{
+        padding: 25px 0;
+      }
+      .benefits-section ul li{
+        line-height: 30px;
+      }
+    
+}
+
+@media(max-width:1200px){
+    .services-section{
+        padding: 0;
+    }
+    .services-list li{
+        margin-bottom: 10px;
+    }
+    .services-list{
+        margin-bottom: 0;
+    }
+}

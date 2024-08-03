@@ -12,3 +12,6 @@
     display: block;
   }
   
+  .acube-video.video-container{
+    max-width: 1200px;
+  }
